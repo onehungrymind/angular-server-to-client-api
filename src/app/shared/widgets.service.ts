@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Widget } from './widget.model';
 
-const BASE_URL = 'http://localhost:3000/widgets';
+const BASE_URL = 'http://localhost:3000/widgets/';
 
 @Injectable()
 export class WidgetsService {
@@ -25,7 +25,7 @@ export class WidgetsService {
   }
 
   updateWidget(widget: Widget) {
-    return this.http.patch(`${BASE_URL}${widget.id}`, widget);
+    return this.http.put(`${BASE_URL}${widget.id}`, widget);
   }
 
   deleteWidget(widget: Widget) {

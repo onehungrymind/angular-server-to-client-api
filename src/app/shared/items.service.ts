@@ -30,7 +30,7 @@ export class ItemsService {
   }
 
   updateItem(item: Item) {
-    return this.http.patch(`${BASE_URL}${item.id}`, item);
+    return this.http.put(`${BASE_URL}${item.id}`, item);
   }
 
   deleteItem(item: Item) {

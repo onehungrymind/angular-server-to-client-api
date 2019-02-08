@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param, Put, Delete } from '@nestjs/common';
 import { WidgetService } from './widget.service';
 
-@Controller('widgetss')
+@Controller('widgets')
 export class WidgetController {
 
   constructor(private widgetsService: WidgetService) { }
