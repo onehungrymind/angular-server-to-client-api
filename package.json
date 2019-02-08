@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "concurrently \"npm run server\" \"ng serve\"",
+    "start": "ng serve",
     "server": "json-server --watch server/api/db.json",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
